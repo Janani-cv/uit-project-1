@@ -1,0 +1,143 @@
+/* General Container and Title Styling */
+.container {
+  background-color: white c; /* Light gray background */
+  padding: 50px 0;
+}
+body{
+  background-color:rgb(230, 236, 236);
+}
+.product-card {
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-image {
+  height: 150px;
+  object-fit: cover;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #28a745;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+/* Product Card Styling */
+.product-card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.card-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-family: 'Arial', sans-serif;
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+/* Button Styling */
+.add-to-cart-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #2ecc71;
+  transform: scale(1.05);
+}
+
+.add-to-cart-btn:focus {
+  outline: none;
+}
+
+/* Grid & Layout Styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 30%;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .col {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col {
+    flex-basis: 100%;
+  }
+}
+
+/* Hover Effects */
+.product-card:hover .product-image {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Background Color for Product Page */
+.product-page-background {
+  background-color: #ecf0f1; /* Light background color for the product page */
+}

@@ -1,0 +1,65 @@
+body { 
+    background-image: url('/cgpa.jpg'); /* Use relative path from public folder */ 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+  } 
+  /* Center the content */ 
+  .container { 
+    text-align: center; 
+    padding: 20px; 
+    font-family: Arial, sans-serif; 
+  } 
+   
+  /* Style the heading */ 
+  h2 { 
+    color: #333333; 
+    font-size: 24px; 
+    margin-bottom: 15px; 
+  } 
+   
+  /* Style each subject selection */ 
+  .subject { 
+    margin-bottom: 10px; 
+  } 
+   
+  /* Style labels */ 
+  label { 
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-right: 10px; 
+  } 
+   
+  /* Style dropdown (select box) */ 
+  select { 
+    padding: 5px; 
+    font-size: 16px; 
+    border: 1px solid #cccccc; 
+    border-radius: 5px; 
+  } 
+   
+  /* Style button */ 
+  button { 
+    margin-top: 15px; 
+    padding: 10px 15px; 
+    font-size: 16px; 
+    color: white; 
+    background-color: #0062ff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+  } 
+   
+  button:hover { 
+    background-color: #006bb3; 
+  } 
+   
+  /* Style the CGPA result */ 
+  h3 { 
+    margin-top: 20px; 
+    font-size: 22px; 
+    color: #a7287d; 
+  }
