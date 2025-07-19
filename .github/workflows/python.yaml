@@ -6,7 +6,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - name: Bulid Docker Image
+        run: docker build -t janani2609/devops-19.7.25 .
       
-      - name: Run Docker Build
-        run : docker build -t pythonimage .
+      - name: List Docker Image
+        run: docker images
+      - name: Log in to Docker Hub 
+        run: echo "${{ secret.PASSWORD}}" | docker login -u ${{secrets.USERNAME}} --password-stdin
+
+      - name: Push Docker image
+        run: docker push janani2609/devops-19.7.25
         
