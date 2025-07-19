@@ -1,15 +1,12 @@
-# name: Run Python Script
-# on: [push]
-# jobs:
-#   run-python:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout code
-#         uses: actions/checkout@v3
-#       - name: Install Python
-#         uses: actions/setup-python@v4
-#         with:
-#           python-version: '3.11'
-#       - name: Run Python Script
-#         run : python main.py
+name: Build Docker image
+on: [push]
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Run Docker Build
+        run : docker build -t pythonimage .
         
