@@ -1,0 +1,14 @@
+name: Hello Python
+on: [push]
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+        -python-version: '3.11'
+        run : python main.py
+        
